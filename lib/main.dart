@@ -20,10 +20,41 @@ class TokuApp extends StatelessWidget {
         body: Column(
           children: [
             Container(
+              padding: EdgeInsets.only(left: 24),
+              alignment: Alignment.centerLeft,
               height: 65,
               width: double.infinity,
               color: Color(0xffEF9235),
-              child: Text('Numbers'),
+              child: Text('Numbers',
+              style: 
+              TextStyle(color: Colors.white,fontSize: 18)),
+            ), Container(
+              padding: EdgeInsets.only(left: 24),
+              alignment: Alignment.centerLeft,
+              height: 65,
+              width: double.infinity,
+              color: Color(0xffEF9235),
+              child: Text('FamilyMembers',
+              style: 
+              TextStyle(color: Colors.white,fontSize: 18)),
+            ), Container(
+              padding: EdgeInsets.only(left: 24),
+              alignment: Alignment.centerLeft,
+              height: 65,
+              width: double.infinity,
+              color: Color(0xffEF9235),
+              child: Text('Colors',
+              style: 
+              TextStyle(color: Colors.white,fontSize: 18)),
+            ), Container(
+              padding: EdgeInsets.only(left: 24),
+              alignment: Alignment.centerLeft,
+              height: 65,
+              width: double.infinity,
+              color: Color(0xffEF9235),
+              child: Text('Phrases',
+              style: 
+              TextStyle(color: Colors.white,fontSize: 18)),
             )
           ],
         ),
