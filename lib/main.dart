@@ -17,14 +17,16 @@ class TokuApp extends StatelessWidget {
           title: Text('Toku',style: 
           TextStyle(color: Colors.white),),
         ),
-        // body: Column(
-        //   children: [
-        //     Container(
-        //       // color: Color(00xf),
-        //       child: Text('Numbers'),
-        //     )
-        //   ],
-        // ),
+        body: Column(
+          children: [
+            Container(
+              height: 65,
+              width: double.infinity,
+              color: Color(0xffEF9235),
+              child: Text('Numbers'),
+            )
+          ],
+        ),
        
 
       ),
