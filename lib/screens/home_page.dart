@@ -13,39 +13,42 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Category(text: 'Numbers', color: Color(0xffEF9235)),
-          Container(
-            padding: EdgeInsets.only(left: 24),
-            alignment: Alignment.centerLeft,
-            height: 65,
-            width: double.infinity,
-            color: Color(0xff08CB00),
-            child: Text(
-              'Family Members',
-              style: TextStyle(color: Colors.white, fontSize: 18),
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 24),
-            alignment: Alignment.centerLeft,
-            height: 65,
-            width: double.infinity,
-            color: Color(0xff6A0066),
-            child: Text(
-              'Colors',
-              style: TextStyle(color: Colors.white, fontSize: 18),
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 24),
-            alignment: Alignment.centerLeft,
-            height: 65,
-            width: double.infinity,
-            color: Color(0xff0046FF),
-            child: Text(
-              'Phrases',
-              style: TextStyle(color: Colors.white, fontSize: 18),
-            ),
-          ),
+          Category(text: 'Family Members', color: Color(0xff08CB00)),
+          Category(text: 'Colors', color: Color(0xff6A0066)),
+          Category(text: 'Phrases', color: Color(0xff0046FF)),
+          // Container(
+          //   padding: EdgeInsets.only(left: 24),
+          //   alignment: Alignment.centerLeft,
+          //   height: 65,
+          //   width: double.infinity,
+          //   color: Color(0xff08CB00),
+          //   child: Text(
+          //     'Family Members',
+          //     style: TextStyle(color: Colors.white, fontSize: 18),
+          //   ),
+          // ),
+          // Container(
+          //   padding: EdgeInsets.only(left: 24),
+          //   alignment: Alignment.centerLeft,
+          //   height: 65,
+          //   width: double.infinity,
+          //   color: Color(0xff6A0066),
+          //   child: Text(
+          //     'Colors',
+          //     style: TextStyle(color: Colors.white, fontSize: 18),
+          //   ),
+          // ),
+          // Container(
+          //   padding: EdgeInsets.only(left: 24),
+          //   alignment: Alignment.centerLeft,
+          //   height: 65,
+          //   width: double.infinity,
+          //   color: Color(0xff0046FF),
+          //   child: Text(
+          //     'Phrases',
+          //     style: TextStyle(color: Colors.white, fontSize: 18),
+          //   ),
+          // ),
         ],
       ),
     );
@@ -53,7 +56,7 @@ class HomePage extends StatelessWidget {
 }
 
 class Category extends StatelessWidget {
-  const Category({this.text, this.color});
+  Category({this.text, this.color});
   String? text;
   Color? color;
 
