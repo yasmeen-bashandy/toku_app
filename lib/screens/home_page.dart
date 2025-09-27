@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toku_app/components/category_item.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,10 +13,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Category(text: 'Numbers', color: Color(0xffEF9235)),
+          Category(onTap: () {}, text: 'Numbers', color: Color(0xffEF9235)),
           Category(text: 'Family Members', color: Color(0xff08CB00)),
           Category(text: 'Colors', color: Color(0xff6A0066)),
           Category(text: 'Phrases', color: Color(0xff0046FF)),
+
+          // -----code before-----
           // Container(
           //   padding: EdgeInsets.only(left: 24),
           //   alignment: Alignment.centerLeft,
@@ -51,24 +54,6 @@ class HomePage extends StatelessWidget {
           // ),
         ],
       ),
-    );
-  }
-}
-
-class Category extends StatelessWidget {
-  Category({this.text, this.color});
-  String? text;
-  Color? color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.only(left: 24),
-      alignment: Alignment.centerLeft,
-      height: 65,
-      width: double.infinity,
-      color: color,
-      child: Text(text!, style: TextStyle(color: Colors.white, fontSize: 18)),
     );
   }
 }
