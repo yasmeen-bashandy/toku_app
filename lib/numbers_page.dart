@@ -13,7 +13,7 @@ class NumbersPage extends StatelessWidget {
       ),
       body: Container(
         child: Row(
-          children: [Image.asset('assets\images\numbers\number_one.png')],
+          children: [Image.asset('assets/images/numbers/number_one.png')],
         ),
       ),
     );
